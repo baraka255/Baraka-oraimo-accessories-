@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Baraka Oraimo Accessories</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background-color: #f4f4f4;
+  }
+  header {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    flex: 1 0 auto;
+    text-align: center;
+  }
+  nav a:hover {
+    background-color: #444;
+  }
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+  }
+  .product {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 6px #ccc;
+  }
+  .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .product h3 {
+    margin: 10px 0 5px;
+  }
+  .product p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  .product a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .product a:hover {
+    background-color: #0a8000;
+  }
+  .reviews {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ccc;
+  }
+  .review-item {
+    margin-bottom: 20px;
+  }
+  footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  @media (max-width: 600px) {
+    nav a {
+      flex: 1 0 100%;
+      border-top: 1px solid #333;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Baraka Oraimo Accessories</h1>
+  <p>Your trusted source for Oraimo gadgets in Kenya</p>
+</header>
+
+<nav>
+  <a href="#home" onclick="showSection('home')">Home</a>
+  <a href="#products" onclick="showSection('products')">Products</a>
+  <a href="#reviews" onclick="showSection('reviews')">Reviews</a>
+  <a href="#contact" onclick="showSection('contact')">Contact</a>
+</nav>
+
+<div class="container">
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h2>Welcome to Baraka Oraimo Accessories</h2>
+    <p>Explore the best Oraimo products. Quality electronics and accessories at your fingertips.</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="section" style="display:none;">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://ke.oraimo.com/cdn/shop/files/OEB-E104DC_720x.jpg" alt="Oraimo FreePods 4" />
+        <h3>Oraimo FreePods 4</h3>
+        <p>True wireless earbuds with powerful bass and long battery life.</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://ke.oraimo.com/cdn/shop/files/OPB-P118DN-Black-2_720x.jpg" alt="Oraimo Power Bank 20000mAh" />
+        <h3>Oraimo Power Bank 20000mAh</h3>
+        <p>Fast-charging power bank for all your mobile devices.</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://ke.oraimo.com/cdn/shop/files/Smartwatch-Black_720x.jpg" alt="Oraimo Smartwatch" />
+        <h3>Oraimo Smartwatch</h3>
+        <p>Track your health and fitness in style with this premium smartwatch.</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://ke.oraimo.com/cdn/shop/files/OCD-EP03_720x.jpg" alt="Oraimo Wired Earphones" />
+        <h3>Oraimo Wired Earphones</h3>
+        <p>High quality sound with comfortable fit for everyday use.</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://ke.oraimo.com/cdn/shop/files/OBG-E15_720x.jpg" alt="Oraimo Bluetooth Speaker" />
+        <h3>Oraimo Bluetooth Speaker</h3>
+        <p>Portable speaker delivering powerful sound wherever you go.</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section" style="display:none;">
+    <h2>Product Reviews</h2>
+    <div class="reviews">
+      <div class="review-item">
+        <h3>Oraimo FreePods 4</h3>
+        <p>These earbuds have excellent sound quality and fit perfectly. Battery life lasts all day!</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="review-item">
+        <h3>Oraimo Power Bank 20000mAh</h3>
+        <p>Reliable and fast-charging power bank, great for travel and daily use.</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+      <div class="review-item">
+        <h3>Oraimo Smartwatch</h3>
+        <p>Stylish and packed with features, it tracks my workouts and sleep effectively.</p>
+        <a href="https://ke.oraimo.com?affiliate_code=zaivhrj1" target="_blank" rel="noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" style="display:none;">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:alexbaraka78@gmail.com">alexbaraka78@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/254742064186" target="_blank" rel="noopener">+254742064186</a></p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Baraka Oraimo Accessories. All rights reserved.</p>
+</footer>
+
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(sec => {
+      sec.style.display = sec.id === sectionId ? 'block' : 'none';
+    });
+  }
+  // Show home section by default on page load
+  showSection('home');
+</script>
+
+</body>
+</html>
